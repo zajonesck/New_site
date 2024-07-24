@@ -1,4 +1,4 @@
-var app = document.getElementById('app');
+var app = document.getElementById("app");
 
 var typewriter = new Typewriter(app, {
   loop: true,
@@ -7,30 +7,29 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(1000)
-  .typeString('I am a software developer and content creator from the United States.') //Add your own tagline
+  .typeString("I am a software developer from Austin, Texas.") //Add your own tagline
   .pauseFor(3000)
-  .start()
-
+  .start();
 
 var granimInstance = new Granim({
-    element: '#canvas-image-blending',
-    direction: 'top-bottom',
-    isPausedWhenNotInView: true,
-    image : {
-        source: 'assets/snow.jpg', //change image for intro section if desired
-        blendingMode: 'multiply',
+  element: "#canvas-image-blending",
+  direction: "top-bottom",
+  isPausedWhenNotInView: true,
+  image: {
+    source: "assets/pennybacker.jpg", //change image for intro section if desired
+    blendingMode: "multiply",
+  },
+  states: {
+    "default-state": {
+      gradients: [
+        ["#29323c", "#485563"],
+        ["#FF6B6B", "#556270"],
+        ["#80d3fe", "#7ea0c4"],
+        ["#f0ab51", "#eceba3"],
+      ],
+      transitionSpeed: 8000,
     },
-    states : {
-        "default-state": {
-            gradients: [
-                ['#29323c', '#485563'],
-                ['#FF6B6B', '#556270'],
-                ['#80d3fe', '#7ea0c4'],
-                ['#f0ab51', '#eceba3']
-            ],
-            transitionSpeed: 8000
-        }
-    }
+  },
 });
 
 //BUTTON 1
@@ -43,21 +42,21 @@ var btnModal1 = document.getElementById("btn1");
 var spanModal1 = document.getElementsByClassName("closeModal1")[0];
 
 // When the user clicks on the button, open the modal
-btnModal1.onclick = function() {
+btnModal1.onclick = function () {
   modal1.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
-spanModal1.onclick = function() {
+spanModal1.onclick = function () {
   modal1.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal1) {
     modal1.style.display = "none";
   }
-}
+};
 
 //BUTTON 2
 var modal2 = document.getElementById("modal2");
@@ -69,27 +68,27 @@ var btnModal2 = document.getElementById("btn2");
 var spanModal2 = document.getElementsByClassName("closeModal2")[0];
 
 // When the user clicks on the button, open the modal
-btnModal2.onclick = function() {
+btnModal2.onclick = function () {
   modal2.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
-spanModal2.onclick = function() {
+spanModal2.onclick = function () {
   modal2.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal2) {
     modal2.style.display = "none";
   }
-}
+};
 
 //BUTTON 3 -- links to outside website
 var btn3 = document.getElementById("btn3");
-btn3.onclick = function() { 
-  window.open("https://www.nintendo.com", "_blank") //TODO add your link
-}
+btn3.onclick = function () {
+  window.open("https://www.nintendo.com", "_blank"); //TODO add your link
+};
 
 //BUTTON 4
 var modal4 = document.getElementById("modal4");
@@ -101,21 +100,21 @@ var btnModal4 = document.getElementById("btn4");
 var spanModal4 = document.getElementsByClassName("closeModal4")[0];
 
 // When the user clicks on the button, open the modal
-btnModal4.onclick = function() {
+btnModal4.onclick = function () {
   modal4.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
-spanModal4.onclick = function() {
+spanModal4.onclick = function () {
   modal4.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal4) {
     modal4.style.display = "none";
   }
-}
+};
 
 //BUTTON 5
 var modal5 = document.getElementById("modal5");
@@ -127,27 +126,27 @@ var btnModal5 = document.getElementById("btn5");
 var spanModal5 = document.getElementsByClassName("closeModal5")[0];
 
 // When the user clicks on the button, open the modal
-btnModal5.onclick = function() {
+btnModal5.onclick = function () {
   modal5.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
-spanModal5.onclick = function() {
+spanModal5.onclick = function () {
   modal5.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal5) {
     modal5.style.display = "none";
   }
-}
+};
 
 //BUTTON 6 -- links to outside website
 var btn6 = document.getElementById("btn6");
-btn6.onclick = function() { 
-  window.open("https://www.arduino.cc", "_blank") //TODO add your link
-}
+btn6.onclick = function () {
+  window.open("https://www.arduino.cc", "_blank"); //TODO add your link
+};
 
 //HOBBY MODALS
 
@@ -161,21 +160,21 @@ var btnHobby1 = document.getElementById("hobbyBtn1");
 var spanModalHobby1 = document.getElementsByClassName("closeModalHobby1")[0];
 
 // When the user clicks on the button, open the modal
-btnHobby1.onclick = function() {
+btnHobby1.onclick = function () {
   modalHobby1.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
-spanModalHobby1.onclick = function() {
+spanModalHobby1.onclick = function () {
   modalHobby1.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modalHobby1) {
     modalHobby1.style.display = "none";
   }
-}
+};
 
 //BUTTON HOBBY 2
 var modalHobby2 = document.getElementById("modalHobby2");
@@ -187,21 +186,21 @@ var btnHobby2 = document.getElementById("hobbyBtn2");
 var spanModalHobby2 = document.getElementsByClassName("closeModalHobby2")[0];
 
 // When the user clicks on the button, open the modal
-btnHobby2.onclick = function() {
+btnHobby2.onclick = function () {
   modalHobby2.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
-spanModalHobby2.onclick = function() {
+spanModalHobby2.onclick = function () {
   modalHobby2.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modalHobby2) {
     modalHobby2.style.display = "none";
   }
-}
+};
 
 //BUTTON HOBBY 3
 var modalHobby3 = document.getElementById("modalHobby3");
@@ -213,21 +212,21 @@ var btnHobby3 = document.getElementById("hobbyBtn3");
 var spanModalHobby3 = document.getElementsByClassName("closeModalHobby3")[0];
 
 // When the user clicks on the button, open the modal
-btnHobby3.onclick = function() {
+btnHobby3.onclick = function () {
   modalHobby3.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
-spanModalHobby3.onclick = function() {
+spanModalHobby3.onclick = function () {
   modalHobby3.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modalHobby3) {
     modalHobby3.style.display = "none";
   }
-}
+};
 
 //BUTTON HOBBY 4
 var modalHobby4 = document.getElementById("modalHobby4");
@@ -239,21 +238,21 @@ var btnHobby4 = document.getElementById("hobbyBtn4");
 var spanModalHobby4 = document.getElementsByClassName("closeModalHobby4")[0];
 
 // When the user clicks on the button, open the modal
-btnHobby4.onclick = function() {
+btnHobby4.onclick = function () {
   modalHobby4.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
-spanModalHobby4.onclick = function() {
+spanModalHobby4.onclick = function () {
   modalHobby4.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modalHobby4) {
     modalHobby4.style.display = "none";
   }
-}
+};
 
 //BUTTON HOBBY 5
 var modalHobby5 = document.getElementById("modalHobby5");
@@ -265,21 +264,21 @@ var btnHobby5 = document.getElementById("hobbyBtn5");
 var spanModalHobby5 = document.getElementsByClassName("closeModalHobby5")[0];
 
 // When the user clicks on the button, open the modal
-btnHobby5.onclick = function() {
+btnHobby5.onclick = function () {
   modalHobby5.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
-spanModalHobby5.onclick = function() {
+spanModalHobby5.onclick = function () {
   modalHobby5.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modalHobby5) {
     modalHobby5.style.display = "none";
   }
-}
+};
 
 //BUTTON HOBBY 6
 var modalHobby6 = document.getElementById("modalHobby6");
@@ -291,18 +290,18 @@ var btnHobby6 = document.getElementById("hobbyBtn6");
 var spanModalHobby6 = document.getElementsByClassName("closeModalHobby6")[0];
 
 // When the user clicks on the button, open the modal
-btnHobby6.onclick = function() {
+btnHobby6.onclick = function () {
   modalHobby6.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
-spanModalHobby6.onclick = function() {
+spanModalHobby6.onclick = function () {
   modalHobby6.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modalHobby6) {
     modalHobby6.style.display = "none";
   }
-}
+};
