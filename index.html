@@ -7,52 +7,41 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Zack Jones</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script src="granim.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="assets/ZJSW.jpg" />
   </head>
   <body>
-    <canvas id="canvas-image-blending"></canvas>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <canvas id="canvas-image-blending"></canvas>
+      <div class="hero-content">
+        <h1>Hi, my name is Zack</h1>
+        <p id="app"></p>
+      </div>
+    </section>
 
-    <div
-      class="main-content"
-      style="text-align: center; width: 100%; position: absolute"
-    >
-      <center>
-        <div class="" style="height: 750px">
-          <h1 style="padding-top: 230px; color: white">Hi, my name is Zack</h1>
-          <p style="padding-top: 25px; color: white" id="app"></p>
-        </div>
-
-        <h2 style="padding-bottom: 10px; padding-top: 10px">Introduction</h2>
-
-        <!-- Introduction -->
-        <div
-          class="flex-container-reverse"
-          style="padding-bottom: 50px; padding-top: 20px"
-        >
-          <div class="big-container-left" style="">
-            <!-- <p class="time-text">
-              Fun fact: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p> -->
-            <p style="padding-bottom: 5px">
+    <!-- Intro Section -->
+    <section class="section" id="intro">
+      <h2>Introduction</h2>
+      <div class="intro-content">
+        <div class="row">
+          <div class="col-md-8">
+            <p>
               I'm Zack, a full-stack engineer located in Austin, TX. I possess
               expertise in TypeScript, JavaScript, Node.js, Vue, AWS, and
               PostgreSQL, having designed and launched applications from
@@ -68,127 +57,73 @@
               and collaboration, I'd love to chat.
             </p>
           </div>
-          <div class="small-container-right">
-            <img src="assets/stockphoto.jpg" class="title-image" />
+          <div class="col-md-4">
+            <img
+              src="assets/stockphoto.jpg"
+              class="title-image"
+              alt="Zack Jones"
+            />
           </div>
         </div>
+      </div>
+    </section>
 
-        <h2 class="section-header work-section-header">My Work</h2>
-        <div class="work-section">
-          <!-- Current Project #1 -->
-          <div
-            class="flex-container-reverse"
-            style="padding-bottom: 50px; padding-top: 40px"
-          >
-            <div class="big-container-left">
-              <h3>Teamsters Local 657</h3>
-              <p>
-                A JavaScript application designed to digitize and streamline the
-                grievance process, enhancing operational efficiency and
-                transparency while modernizing union operations for improved
-                member service.
-              </p>
-              <a
-                href="https://www.membersfirst657.com/"
-                target="_blank"
-                class="btn btn-outline-success"
-              >
-                See more
-              </a>
-            </div>
-            <div class="small-container-right">
-              <img src="assets/transparent657.png" class="title-image" />
-            </div>
-          </div>
-
-          <div
-            class="flex-container"
-            style="padding-bottom: 100px; padding-top: 50px"
-          >
-            <div class="small-container-left" style="">
-              <img
-                src="assets/Transparent BarsLoaded Logo.png"
-                alt=""
-                class="title-image"
-              />
-            </div>
-            <div class="big-container-right" style="">
-              <h3>Bar's Loaded</h3>
-              <p style="padding-bottom: 10px">
-                A versatile fitness tool, ideal for powerlifters and gym
-                enthusiasts, offering a visual loading guide based on input
-                weight.
-              </p>
-              <a
-                href="https://www.barsloaded.net/"
-                target="_blank"
-                class="btn btn-outline-success"
-              >
-                See more
-              </a>
-            </div>
-          </div>
-
-          <!-- Current Project #2 -->
-          <div
-            class="flex-container-reverse"
-            style="padding-bottom: 50px; padding-top: 40px"
-          >
-            <div class="big-container-left">
-              <h3>Better Together</h3>
-              <p>
-                A unique platform designed to connect coaches and athletes by
-                sharing nutrition, weight, and workouts on a single platform.
-              </p>
-              <a
-                href="https://www.bettertogether.day/"
-                target="_blank"
-                class="btn btn-outline-success"
-              >
-                See more
-              </a>
-            </div>
-            <div class="small-container-right">
-              <img src="assets/B2G.png" class="title-image" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Completed projects -->
-
-        <!-- Completed Project #1 -->
-
-        <!-- Work Section -->
-        <h2 style="padding-bottom: 20px">Work History</h2>
-
-        <!-- Job #1 -->
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <h2 class="section-header work-section-header">My Work</h2>
+      <div class="work-section">
         <div
           class="flex-container-reverse"
           style="padding-bottom: 50px; padding-top: 40px"
         >
           <div class="big-container-left">
-            <h3>Software Engineer - Teamster Local 657</h3>
-            <p class="time-text">2023 — Present</p>
+            <h3>Teamsters Local 657</h3>
             <p>
-              I led the technical development for the Members First Slate
-              campaign for the 2024 Local 657 election, created digital
-              marketing strategies, managed online outreach, and developed a
-              robust web presence with interactive features to engage members. I
-              also spearheaded the redesign of the Local 657 website using
-              JavaScript, HTML, CSS, and modern frameworks to enhance user
-              experience and accessibility, ensuring it was secure and scalable.
-              Additionally, I built a JavaScript app to digitize and streamline
-              the grievance process, improving operational efficiency and
-              transparency, and modernizing union operations for better member
-              service.
+              A JavaScript application designed to digitize and streamline the
+              grievance process, enhancing operational efficiency and
+              transparency while modernizing union operations for improved
+              member service.
             </p>
+            <a
+              href="https://www.membersfirst657.com/"
+              target="_blank"
+              class="btn btn-outline-success"
+              >See more</a
+            >
           </div>
           <div class="small-container-right">
             <img
-              src="assets/members-first.png"
-              class="work-history-image"
-              alt="Software Engineer Image"
+              src="assets/local657-transparent.png"
+              class="title-image"
+              alt="Teamsters Local 657"
             />
+          </div>
+        </div>
+
+        <div
+          class="flex-container"
+          style="padding-bottom: 100px; padding-top: 50px"
+        >
+          <div class="small-container-left">
+            <img
+              src="assets/barsloaded-circle.png"
+              alt="Bar's Loaded"
+              class="title-image"
+            />
+          </div>
+          <div class="big-container-right">
+            <h3>Bar's Loaded</h3>
+            <p style="padding-bottom: 10px">
+              A versatile fitness tool, ideal for powerlifters and gym
+              enthusiasts, offering a visual loading guide based on input
+              weight.
+            </p>
+            <a
+              href="https://www.barsloaded.net/"
+              target="_blank"
+              class="btn btn-outline-success"
+              >See more</a
+            >
           </div>
         </div>
 
@@ -197,1197 +132,229 @@
           style="padding-bottom: 50px; padding-top: 40px"
         >
           <div class="big-container-left">
-            <h3>Software Consultant - Self-employed</h3>
-            <p class="time-text">2022 — Present</p>
+            <h3>Better Together</h3>
             <p>
-              As a full-stack engineer, I have honed my coding skills through a
-              blend of technical development and client-facing consulting
-              experiences. This dual focus has enabled me to directly
-              collaborate with clients, understanding their needs and
-              translating them into tangible features in custom apps and
-              websites. My portfolio includes contributions to client projects,
-              where I have successfully implemented and updated functionality in
-              web apps, as well as built and deployed websites. I bring a unique
-              blend of technical ability, client communication, and an
-              understanding of project requirements. My commitment to continual
-              learning and a strong preference for automated testing ensures
-              that I deliver efficient and effective solutions tailored to each
-              client's needs.
+              A unique platform designed to connect coaches and athletes by
+              sharing nutrition, weight, and workouts on a single platform.
             </p>
+            <a
+              href="https://www.bettertogether.day/"
+              target="_blank"
+              class="btn btn-outline-success"
+              >See more</a
+            >
           </div>
           <div class="small-container-right">
             <img
-              src="assets/ZJSW.jpg"
-              class="work-history-image"
-              alt="Software Engineer Image"
+              src="assets/B2G.png"
+              class="title-image"
+              alt="Better Together"
             />
           </div>
         </div>
-        <!-- Job #3 -->
-        <div
-          class="flex-container-reverse"
-          style="padding-bottom: 50px; padding-top: 40px"
-        >
-          <div class="big-container-left">
-            <h3>CDL Driver - United Parcel Services</h3>
-            <p class="time-text">2018 — Present</p>
-            <p>
-              Operated commercial vehicles. Planned and managed routes.
-              Inspected and maintained vehicles. Ensured safety and compliance.
-              Adhered to schedules and deadlines.
-            </p>
-          </div>
-          <div class="small-container-right">
-            <img
-              src="assets/squarefeeder.png"
-              class="work-history-image"
-              alt="CDL Driver Image"
-            />
-          </div>
+      </div>
+    </section>
+
+    <!-- Work History Section -->
+    <section class="section" id="work-history">
+      <h2>Work History</h2>
+
+      <div
+        class="flex-container-reverse"
+        style="padding-bottom: 50px; padding-top: 40px"
+      >
+        <div class="big-container-left">
+          <h3>Software Engineer - Teamster Local 657</h3>
+          <p class="time-text">2023 — Present</p>
+          <p>
+            I led the technical development for the Members First Slate campaign
+            for the 2024 Local 657 election, created digital marketing
+            strategies, managed online outreach, and developed a robust web
+            presence with interactive features to engage members. I also
+            spearheaded the redesign of the Local 657 website using JavaScript,
+            HTML, CSS, and modern frameworks to enhance user experience and
+            accessibility, ensuring it was secure and scalable. Additionally, I
+            built a JavaScript app to digitize and streamline the grievance
+            process, improving operational efficiency and transparency, and
+            modernizing union operations for better member service.
+          </p>
         </div>
-        <!-- Job #2 -->
-        <div
-          class="flex-container-reverse"
-          style="padding-bottom: 50px; padding-top: 40px"
-        >
-          <div class="big-container-left">
-            <h3>Online Fitness Coach</h3>
-            <p class="time-text">2018 — 2024</p>
-            <p>
-              Utilized web development skills to create engaging content for
-              online clients. Managed and maintained the online platform,
-              ensuring a seamless user experience.
-            </p>
-          </div>
-          <div class="small-container-right">
-            <img
-              src="assets/gym.jpeg"
-              class="work-history-image"
-              alt="Fitness Coach Image"
-            />
-          </div>
+        <div class="small-container-right">
+          <img
+            src="assets/members-first-transparent.png"
+            class="work-history-image"
+            alt="Software Engineer - Teamster Local 657"
+          />
         </div>
+      </div>
 
-        <!-- Job #4 -->
-        <div
-          class="flex-container-reverse"
-          style="padding-bottom: 50px; padding-top: 40px"
-        >
-          <div class="big-container-left">
-            <h3>Founder & Lead Trainer - First Form Fitness</h3>
-            <p class="time-text">2013 — 2018</p>
-            <p>
-              Developed and executed marketing strategies to attract and retain
-              members. Managed the gym's finances, including budgeting,
-              accounting, and billing. Hired and trained staff, including
-              personal trainers, group fitness instructors, and front desk
-              personnel. Provided exceptional customer service and addressed
-              customer concerns and complaints. Developed partnerships with
-              local businesses and organizations to enhance the gym's reputation
-              and attract new members.
-            </p>
-          </div>
-          <div class="small-container-right">
-            <img
-              src="assets/squareF3.jpeg"
-              class="work-history-image"
-              alt="Lead Trainer Image"
-            />
-          </div>
+      <div
+        class="flex-container-reverse"
+        style="padding-bottom: 50px; padding-top: 40px"
+      >
+        <div class="big-container-left">
+          <h3>Software Consultant - Self-employed</h3>
+          <p class="time-text">2022 — Present</p>
+          <p>
+            As a full-stack engineer, I have honed my coding skills through a
+            blend of technical development and client-facing consulting
+            experiences. This dual focus has enabled me to directly collaborate
+            with clients, understanding their needs and translating them into
+            tangible features in custom apps and websites. My portfolio includes
+            contributions to client projects, where I have successfully
+            implemented and updated functionality in web apps, as well as built
+            and deployed websites. I bring a unique blend of technical ability,
+            client communication, and an understanding of project requirements.
+            My commitment to continual learning and a strong preference for
+            automated testing ensures that I deliver efficient and effective
+            solutions tailored to each client's needs.
+          </p>
         </div>
-        <!-- Languages -->
-        <h2 class="section-header tech-stacks-section-header">Tech Stacks</h2>
-        <div class="tech-stacks-section">
-          <h4>JavaScript & TypeScript</h4>
-          <p style="padding-bottom: 20px">React, Vue, Node, Jest & Express</p>
-
-          <h4>SQL</h4>
-
-          <p style="padding-bottom: 20px">Postgres</p>
-
-          <h4>AWS</h4>
-
-          <p style="padding-bottom: 20px">Amplify, S3, Lambda, Cognito & RDS</p>
-
-          <h4>C#</h4>
-
-          <p style="padding-bottom: 20px">.NET</p>
-
-          <h4>Ruby On Rails</h4>
+        <div class="small-container-right">
+          <img
+            src="assets/ZJSW.jpg"
+            class="work-history-image"
+            alt="Software Consultant - Self-employed"
+          />
         </div>
+      </div>
 
-        <!-- Contact me / ending section -->
-        <h2 style="padding-bottom: 20px; padding-top: 80px">Contact Me</h2>
-
-        <img src="assets/contactme.jpg" class="rounded-corners" style="" />
-
-        <br />
-        <br />
-
-        <a
-          href="mailto:zajonesck83@gmail.com"
-          class="fa fa-paper-plane"
-          style="margin-right: 10px"
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/zajonesck"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="fa fa-linkedin"
-        ></a>
-        <a
-          href="https://www.instagram.com/zack83kg/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="fa fa-instagram"
-          style="margin-right: 10px"
-        ></a>
-        <a
-          href="https://github.com/zajonesck"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="fa fa-github"
-        ></a>
-
-        <br />
-        <br />
-        <br />
-
-        <!--MODALS-->
-
-        <!-- Modal for Button #1 - change inside information such as images and text to make it your own-->
-        <div id="modal1" class="modal">
-          <div class="modal-content">
-            <span class="closeModal1">&times;</span>
-            <h2>Porttitor massa</h2>
-            <br />
-            <div
-              id="carouselIndicators1"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators1"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators1"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators1"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assets/desksetup2.webp"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/desksetup3.jpeg"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/desksetup4.webp"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <br />
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselIndicators1"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselIndicators1"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <p>
-              Amet consectetur adipiscing elit duis. Sagittis purus sit amet
-              volutpat consequat mauris nunc congue nisi. In hendrerit gravida
-              rutrum quisque non tellus orci ac auctor. Rutrum tellus
-              pellentesque eu tincidunt tortor aliquam. Eu facilisis sed odio
-              morbi. Amet nisl suscipit adipiscing bibendum est ultricies
-              integer quis.
-            </p>
-            <p>Skills used:</p>
-            <ul>
-              <li>HTML, CSS, JavaScript</li>
-              <li>Google Firebase</li>
-            </ul>
-            <p>Skills learned:</p>
-            <ul>
-              <li>Marketing</li>
-            </ul>
-            <p>
-              Amet nisl suscipit adipiscing bibendum est ultricies integer quis.
-            </p>
-          </div>
+      <div
+        class="flex-container-reverse"
+        style="padding-bottom: 50px; padding-top: 40px"
+      >
+        <div class="big-container-left">
+          <h3>CDL Driver - United Parcel Services</h3>
+          <p class="time-text">2018 — Present</p>
+          <p>
+            Operated commercial vehicles. Planned and managed routes. Inspected
+            and maintained vehicles. Ensured safety and compliance. Adhered to
+            schedules and deadlines.
+          </p>
         </div>
-
-        <!-- Modal for Button #2 - change inside information such as images and text to make it your own-->
-        <div id="modal2" class="modal">
-          <div class="modal-content">
-            <span class="closeModal2">&times;</span>
-            <h2>Auctor augue</h2>
-            <br />
-            <div
-              id="carouselIndicators2"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators2"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators2"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators2"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assets/app1.webp"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/app2.webp"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/app3.webp"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <br />
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselIndicators2"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselIndicators2"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <p>
-              Leo integer malesuada nunc vel risus commodo viverra maecenas. In
-              hendrerit gravida rutrum quisque non. Lectus mauris ultrices eros
-              in. Proin sed libero enim sed faucibus. In eu mi bibendum neque
-              egestas congue quisque egestas diam. Amet massa vitae tortor
-              condimentum lacinia quis vel eros. Pretium viverra suspendisse
-              potenti nullam ac tortor vitae. Non arcu risus quis varius quam
-              quisque id. Quis auctor elit sed vulputate mi sit amet. Tellus
-              integer feugiat scelerisque varius morbi. Eget nullam non nisi est
-              sit.
-            </p>
-            <p>Skills used:</p>
-            <ul>
-              <li>Swift</li>
-              <li>SwiftUI</li>
-            </ul>
-            <p>Skills learned:</p>
-            <ul>
-              <li>Github</li>
-            </ul>
-            <p>
-              Amet volutpat consequat mauris nunc congue nisi vitae suscipit
-              tellus.
-            </p>
-          </div>
+        <div class="small-container-right">
+          <img
+            src="assets/squarefeeder.png"
+            class="work-history-image"
+            alt="CDL Driver - United Parcel Services"
+          />
         </div>
+      </div>
 
-        <!--Button #3 goes to outside link, so no modal is necessary-->
-
-        <!-- Modal for Button #4 - change inside information such as images and text to make it your own-->
-        <div id="modal4" class="modal">
-          <div class="modal-content">
-            <span class="closeModal4">&times;</span>
-            <h2>Tempus imperdiet</h2>
-            <br />
-            <div
-              id="carouselIndicators4"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators4"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators4"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators4"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assets/desksetup3.jpeg"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/desk setup.webp"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/desksetup4.webp"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <br />
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselIndicators4"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselIndicators4"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <p>
-              Dolor morbi non arcu risus quis varius quam quisque id. Sed
-              vulputate mi sit amet mauris commodo quis imperdiet massa. Nunc
-              pulvinar sapien et ligula ullamcorper malesuada. Fringilla ut
-              morbi tincidunt augue interdum velit euismod in. Facilisi cras
-              fermentum odio eu feugiat pretium. Ipsum dolor sit amet
-              consectetur.
-            </p>
-            <p>Skills used:</p>
-            <ul>
-              <li>Python</li>
-              <li>Tkinter</li>
-            </ul>
-            <p>Skills learned:</p>
-            <ul>
-              <li>Game design</li>
-            </ul>
-            <p>
-              Amet volutpat consequat mauris nunc congue nisi vitae suscipit
-              tellus.
-            </p>
-          </div>
+      <div
+        class="flex-container-reverse"
+        style="padding-bottom: 50px; padding-top: 40px"
+      >
+        <div class="big-container-left">
+          <h3>Online Fitness Coach</h3>
+          <p class="time-text">2018 — 2024</p>
+          <p>
+            Utilized web development skills to create engaging content for
+            online clients. Managed and maintained the online platform, ensuring
+            a seamless user experience.
+          </p>
         </div>
-
-        <!-- Modal for Button #5 - change inside information such as images and text to make it your own-->
-        <div id="modal5" class="modal">
-          <div class="modal-content">
-            <span class="closeModal5">&times;</span>
-            <h2>Feugiat pretium</h2>
-            <br />
-            <div
-              id="carouselIndicators5"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators5"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators5"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators5"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assets/project5_2.webp"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/project5.webp setup.webp"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/project5_3.jpeg"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <br />
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselIndicators5"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselIndicators5"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <p>
-              Mi eget mauris pharetra et ultrices. Pellentesque pulvinar
-              pellentesque habitant morbi. Eu volutpat odio facilisis mauris sit
-              amet massa vitae tortor. Orci dapibus ultrices in iaculis nunc sed
-              augue. Vestibulum lectus mauris ultrices eros. In tellus integer
-              feugiat scelerisque varius morbi. Pulvinar neque laoreet
-              suspendisse interdum consectetur libero. Aliquet lectus proin nibh
-              nisl condimentum id venenatis a condimentum. Enim ut sem viverra
-              aliquet. Adipiscing bibendum est ultricies integer quis auctor
-              elit sed. Senectus et netus et malesuada fames. Commodo elit at
-              imperdiet dui. In hac habitasse platea dictumst.
-            </p>
-            <p>Skills used:</p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-            <p>Skills learned:</p>
-            <ul>
-              <li>Web design</li>
-              <li>Working with customers</li>
-            </ul>
-            <p>
-              Tincidunt lobortis feugiat vivamus at augue eget arcu dictum
-              varius.
-            </p>
-          </div>
+        <div class="small-container-right">
+          <img
+            src="assets/gym.jpeg"
+            class="work-history-image"
+            alt="Online Fitness Coach"
+          />
         </div>
+      </div>
 
-        <!--Button #6 goes to outside link, so no modal is necessary-->
-
-        <!-- MODALS FOR HOBBIES -->
-
-        <!-- Modal for Hobby Button #1 - change inside information such as images and text to make it your own-->
-        <div id="modalHobby1" class="modal">
-          <div class="modal-content">
-            <span class="closeModalHobby1">&times;</span>
-            <h2>Tennis</h2>
-            <br />
-            <div
-              id="carouselIndicatorsHobby1"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby1"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby1"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby1"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="https://images.pexels.com/photos/5730299/pexels-photo-5730299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/5739122/pexels-photo-5739122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/5836917/pexels-photo-5836917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <br />
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby1"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby1"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <p>
-              Egestas congue quisque egestas diam in arcu cursus euismod.
-              Accumsan lacus vel facilisis volutpat est velit egestas dui. Nulla
-              porttitor massa id neque aliquam vestibulum morbi blandit. Enim ut
-              tellus elementum sagittis vitae et leo duis. Neque gravida in
-              fermentum et sollicitudin ac. Pharetra et ultrices neque ornare
-              aenean euismod. Tincidunt id aliquet risus feugiat in ante metus
-              dictum.
-            </p>
-          </div>
+      <div
+        class="flex-container-reverse"
+        style="padding-bottom: 50px; padding-top: 40px"
+      >
+        <div class="big-container-left">
+          <h3>Founder & Lead Trainer - First Form Fitness</h3>
+          <p class="time-text">2013 — 2018</p>
+          <p>
+            Developed and executed marketing strategies to attract and retain
+            members. Managed the gym's finances, including budgeting,
+            accounting, and billing. Hired and trained staff, including personal
+            trainers, group fitness instructors, and front desk personnel.
+            Provided exceptional customer service and addressed customer
+            concerns and complaints. Developed partnerships with local
+            businesses and organizations to enhance the gym's reputation and
+            attract new members.
+          </p>
         </div>
-
-        <!-- Modal for Hobby Button #2 - change inside information such as images and text to make it your own-->
-        <div id="modalHobby2" class="modal">
-          <div class="modal-content">
-            <span class="closeModalHobby2">&times;</span>
-            <h2>Basketball</h2>
-            <br />
-            <div
-              id="carouselIndicatorsHobby2"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby2"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby2"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby2"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/1080882/pexels-photo-1080882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/1332237/pexels-photo-1332237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <br />
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby2"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby2"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <p>
-              Suscipit tellus mauris a diam maecenas sed enim ut. Eu augue ut
-              lectus arcu bibendum at. Auctor augue mauris augue neque gravida
-              in. Fringilla ut morbi tincidunt augue interdum velit euismod in.
-              Etiam sit amet nisl purus in mollis nunc sed id. Ullamcorper eget
-              nulla facilisi etiam dignissim diam quis.
-            </p>
-          </div>
+        <div class="small-container-right">
+          <img
+            src="assets/squaref3-transparent.png"
+            class="work-history-image"
+            alt="Founder & Lead Trainer - First Form Fitness"
+          />
         </div>
+      </div>
+    </section>
 
-        <!-- Modal for Hobby Button #3 - change inside information such as images and text to make it your own-->
-        <div id="modalHobby3" class="modal">
-          <div class="modal-content">
-            <span class="closeModalHobby3">&times;</span>
-            <h2>Soccer</h2>
-            <br />
-            <div
-              id="carouselIndicatorsHobby3"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby3"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby3"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby3"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/3148452/pexels-photo-3148452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <br />
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby3"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby3"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <p>
-              Augue neque gravida in fermentum et sollicitudin ac orci. Donec
-              enim diam vulputate ut pharetra sit amet aliquam. Praesent semper
-              feugiat nibh sed pulvinar proin. At ultrices mi tempus imperdiet
-              nulla malesuada pellentesque elit eget. Posuere ac ut consequat
-              semper. Sollicitudin tempor id eu nisl nunc mi. Quam adipiscing
-              vitae proin sagittis nisl rhoncus mattis rhoncus.
-            </p>
-          </div>
+    <!-- Tech Stacks Section -->
+    <section class="section" id="tech-stacks">
+      <h2 class="section-header tech-stacks-section-header">Tech Stacks</h2>
+      <div class="tech-stacks-grid">
+        <div class="tech-stack-card">
+          <h3>JavaScript & TypeScript</h3>
+          <p>React, Vue, Node, Jest & Express</p>
         </div>
-
-        <!-- Modal for Hobby Button #4 - change inside information such as images and text to make it your own-->
-        <div id="modalHobby4" class="modal">
-          <div class="modal-content">
-            <span class="closeModalHobby4">&times;</span>
-            <h2>Piano</h2>
-            <br />
-            <div
-              id="carouselIndicatorsHobby4"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby4"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby4"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby4"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="https://images.pexels.com/photos/322719/pexels-photo-322719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/2378209/pexels-photo-2378209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/164715/pexels-photo-164715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <br />
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby4"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby4"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <p>
-              Augue neque gravida in fermentum et sollicitudin ac orci. Donec
-              enim diam vulputate ut pharetra sit amet aliquam. Praesent semper
-              feugiat nibh sed pulvinar proin. At ultrices mi tempus imperdiet
-              nulla malesuada pellentesque elit eget. Posuere ac ut consequat
-              semper. Sollicitudin tempor id eu nisl nunc mi. Quam adipiscing
-              vitae proin sagittis nisl rhoncus mattis rhoncus.
-            </p>
-          </div>
+        <div class="tech-stack-card">
+          <h3>SQL</h3>
+          <p>Postgres</p>
         </div>
-
-        <!-- Modal for Hobby Button #5 - change inside information such as images and text to make it your own-->
-        <div id="modalHobby5" class="modal">
-          <div class="modal-content">
-            <span class="closeModalHobby5">&times;</span>
-            <h2>Painting</h2>
-            <br />
-            <div
-              id="carouselIndicatorsHobby5"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby5"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby5"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby5"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="https://images.pexels.com/photos/2728587/pexels-photo-2728587.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/6184431/pexels-photo-6184431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/6404197/pexels-photo-6404197.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <br />
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby5"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby5"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <p>
-              Augue neque gravida in fermentum et sollicitudin ac orci. Donec
-              enim diam vulputate ut pharetra sit amet aliquam. Praesent semper
-              feugiat nibh sed pulvinar proin. At ultrices mi tempus imperdiet
-              nulla malesuada pellentesque elit eget. Posuere ac ut consequat
-              semper. Sollicitudin tempor id eu nisl nunc mi. Quam adipiscing
-              vitae proin sagittis nisl rhoncus mattis rhoncus.
-            </p>
-          </div>
+        <div class="tech-stack-card">
+          <h3>AWS</h3>
+          <p>Amplify, S3, Lambda, Cognito & RDS</p>
         </div>
-
-        <!-- Modal for Hobby Button #5 - change inside information such as images and text to make it your own-->
-        <div id="modalHobby6" class="modal">
-          <div class="modal-content">
-            <span class="closeModalHobby6">&times;</span>
-            <h2>Skiing</h2>
-            <br />
-            <div
-              id="carouselIndicatorsHobby6"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby6"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby6"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicatorsHobby6"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="https://images.pexels.com/photos/848618/pexels-photo-848618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/47356/freerider-skiing-ski-sports-47356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/3193846/pexels-photo-3193846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    style="height: 400px; object-fit: contain; width: 100%"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <br />
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby6"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselIndicatorsHobby6"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <p>
-              Augue neque gravida in fermentum et sollicitudin ac orci. Donec
-              enim diam vulputate ut pharetra sit amet aliquam. Praesent semper
-              feugiat nibh sed pulvinar proin. At ultrices mi tempus imperdiet
-              nulla malesuada pellentesque elit eget. Posuere ac ut consequat
-              semper. Sollicitudin tempor id eu nisl nunc mi. Quam adipiscing
-              vitae proin sagittis nisl rhoncus mattis rhoncus.
-            </p>
-          </div>
+        <div class="tech-stack-card">
+          <h3>C#</h3>
+          <p>.NET</p>
         </div>
-      </center>
-    </div>
+        <div class="tech-stack-card">
+          <h3>Ruby On Rails</h3>
+          <p></p>
+        </div>
+      </div>
+    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js" charset="utf-8"></script>
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <h2>Contact Me</h2>
+      <img
+        src="assets/contactme.jpg"
+        class="rounded-corners"
+        alt="Contact Me"
+      />
+      <br /><br />
+      <a
+        href="mailto:zajonesck83@gmail.com"
+        class="fa fa-paper-plane"
+        style="margin-right: 10px"
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/zajonesck"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fa fa-linkedin"
+      ></a>
+      <a
+        href="https://www.instagram.com/zack83kg/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fa fa-instagram"
+        style="margin-right: 10px"
+      ></a>
+      <a
+        href="https://github.com/zajonesck"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fa fa-github"
+      ></a>
+      <br /><br /><br />
+    </section>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
   </body>
 </html>
