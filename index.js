@@ -1,3 +1,19 @@
+// Hamburger menu
+var navbarToggle = document.getElementById("navbar-toggle");
+var navbarLinks = document.getElementById("navbar-links");
+
+navbarToggle.addEventListener("click", function () {
+  navbarToggle.classList.toggle("open");
+  navbarLinks.classList.toggle("open");
+});
+
+navbarLinks.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    navbarToggle.classList.remove("open");
+    navbarLinks.classList.remove("open");
+  });
+});
+
 var app = document.getElementById("app");
 
 var typewriter = new Typewriter(app, {
