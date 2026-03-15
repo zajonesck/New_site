@@ -13,7 +13,7 @@ var sectionObserver = new IntersectionObserver(function (entries) {
       });
     }
   });
-}, { threshold: 0.4 });
+}, { threshold: 0.1 });
 
 sections.forEach(function (section) {
   sectionObserver.observe(section);
