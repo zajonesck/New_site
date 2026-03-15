@@ -164,8 +164,6 @@ p {
   height: 200px;
   object-fit: contain;
   border-radius: 10px;
-  background-color: #f0f0f0;
-  padding: 8px;
 }
 
 .modal {
