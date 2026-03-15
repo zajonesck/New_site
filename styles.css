@@ -227,6 +227,11 @@ ul {
   text-align: center;
 }
 
+.work-section .flex-container,
+.work-section .flex-container-reverse {
+  align-items: center;
+}
+
 .big-container-left {
   flex: 70%;
   padding: 10px;
