@@ -1,3 +1,17 @@
+// Scroll animations
+var animObserver = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      animObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".fade-up, .fade-left, .fade-right").forEach(function (el) {
+  animObserver.observe(el);
+});
+
 // Active nav link on scroll
 var navLinks = document.querySelectorAll(".navbar-links a");
 var sections = document.querySelectorAll("section[id]");
