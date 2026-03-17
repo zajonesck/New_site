@@ -3,6 +3,19 @@ html {
   scroll-padding-top: 60px;
 }
 
+body {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 100, 100, 0.18),
+    rgba(255, 165, 50, 0.18) 20%,
+    rgba(255, 230, 50, 0.18) 40%,
+    rgba(80, 200, 100, 0.18) 60%,
+    rgba(50, 140, 255, 0.18) 80%,
+    rgba(160, 60, 255, 0.18)
+  );
+  background-attachment: fixed;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -343,11 +356,11 @@ ul {
 }
 
 .section {
-  background-color: #f6f6f6;
+  background-color: transparent;
 }
 
 .section:nth-child(even) {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 h2 {
