@@ -58,7 +58,7 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(1000)
-  .typeString("Support engineer. ATX → SFO.")
+  .typeString("Support engineer. Sactown → Silicon Valley.")
   .pauseFor(3000)
   .start();
 
